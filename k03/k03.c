@@ -55,9 +55,10 @@ char* BMSearch(char text[], char key[])
 {
     //  ここを実装する
 
-    int text_len,key_len,index,pos,i,z=0;
+    int text_len,key_len,index,pos,t,i,z=0;
         text_len=0;
         i=0;
+        t=0;
     while(1)
     {
       if(text[text_len]=='\0')
@@ -83,7 +84,7 @@ char* BMSearch(char text[], char key[])
         {
           table[z]=key_len;
         }
-        for(z=key_len;z>=0;z--)
+        for(z=key_len;z>0;z--)
         {
           table[key[z-1]]=i;
           i++;
@@ -117,7 +118,7 @@ char* BMSearch(char text[], char key[])
             {
               index=index+table[text[index]];
             } 
-          i=index;
+          t=index;
     }
   return NULL;
 }
