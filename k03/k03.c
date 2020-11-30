@@ -110,7 +110,7 @@ char* BMSearch(char text[], char key[])
         }
         index--;
       }
-          if(index+table[text[index]]<i)
+          if(index+table[text[index]]<t)
             {
               index=index+1;
             }    

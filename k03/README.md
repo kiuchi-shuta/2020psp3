@@ -70,3 +70,4 @@ BM Search. Find keyword at:wind in my hair.
 ## 修正履歴
 Zが０の時が出ないように修正
 iの値がかぶっていたので片方をtに変更
+ifの条件分もtに変更
